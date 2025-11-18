@@ -1,0 +1,122 @@
+ <!DOCTYPE html>
+  <HTML lang="ja">
+    <HEAD>
+      <META charset="utf-8"/>
+      <TITLE>Canvasを使ってみよう</TITLE> //Let's get started with Canvas
+      <STYLE type="text/css">
+        canvas {border: 1px solid black; }
+      </STYLE>
+
+      <script src="script.js"></script>
+
+      <script>
+        var canvas;
+        var cont;
+        var x, y;
+        var outw;
+    
+        window.onload = function(){
+          // canvas オブジェクトの取得 //Getting the canvas object
+          canvas = document.getElementById('owncanvas');
+          // ブラウザがCanvasに対応していなければ終了 //If the browser does not support Canvas, the process ends.
+          if(!canvas.getContext){
+            return;
+          }
+          cont = canvas.getContext('2d');
+
+          //Here comes the programming work
+          var bt1 = document.getElementById("button1");
+          bt1.addEventListener( 'click', func1, false);
+
+          var bt2 = document.getElementById("button2");
+          bt2.addEventListener( 'click', func2, false);
+
+          var bt3 = document.getElementById("button3");
+          bt3.addEventListener( 'click', func3, false);
+
+          var bt4 = document.getElementById("button4");
+          bt4.addEventListener( 'click', func4, false);
+
+          outw = document.getElementById("out1");
+
+          function func1(ev){
+            cont.beginPath();
+            cont.strokeStyle="red";
+            cont.moveTo(x,y);
+            x+=50;
+            y+=20;
+            cont.lineTo(x,y);
+            cont.stroke();
+            outw.innerText ="Button 1 was pressed and func1 was called";
+          }
+
+          function func2(ev){
+            cont.beginPath();
+            cont.strokeStyle="red";
+            cont.arc(x,y,100,0, 2*Math.PI);
+            cont.stroke();
+            outw.innerText ="Button 2 was pressed and func2 was called";
+          }
+
+           function func3(ev){
+            x=0;
+            y=0;
+            cont.moveTo(x,y);
+            outw.innerText ="Button 3 was pressed and func3 was called"
+          } 
+
+          function func4(ev){
+            cont.fillStyle="white";
+            cont.fillRect(0,0,canvas.width, canvas.height);
+            x=0;
+            y=0;
+            outw.innerText ="Button 1 was pressed and func1 was called";
+          }
+
+
+          cont.beginPath();
+          cont.strokeStyle="red";
+          x = 100;
+          y = 100;
+          cont.moveTo(x,y);
+          x += 100;
+          y += 100;
+          cont.lineTo(x,y);
+          cont.stroke();
+          //Write down the details of your work up to this point.
+        }
+      </script>
+    </HEAD>
+    <BODY>
+      <DIV id="canvasbloack">
+        <CANVAS id="owncanvas" width="500" height="500">
+          このブラウザはCanvasに対応していません。 //This browser does not support Canvas.
+        </CANVAS>
+
+      <p>
+      <button id="button1">Draw line</button>
+      </p>
+
+      <p>
+      <button id="button2">Draw circle</button>
+      </p>
+
+      <p>
+      <button id="button3">Go back to the origin</button>
+      </p>
+
+      <p>
+      <button id="button4">clear</button>
+      </p>
+    </DIV>
+    
+    <DIV id="formblock">
+      <INPUT type="button" id="j_button1" value="ボタン1">
+      <INPUT type="button" id="j_button2" value="ボタン2">
+      <INPUT type="button" id="j_button3" value="ボタン3">
+      <BR>
+        <OUTPUT id="out1"></OUTPUT>
+    </DIV>
+
+  </BODY>
+  </HTML>
