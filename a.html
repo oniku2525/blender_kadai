@@ -1,0 +1,340 @@
+<!--
+/*********************************************************************************************
+*   4J 情報工学実験 OPTCAR スケジュール管理システム
+*
+*                      TAKASAKA Yoshihiro    2021.07.26.MON    
+*                                                              
+*------------------------------------------------------------------------------------------
+*  DATA1 に　学生の学籍番号を登録してから
+*******************************************************************************************/
+-->
+<html><head>		
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>OPTCAR スケジュール管理システム</title>
+</head>
+<body>
+<!--
+ <script type="text/javascript">
+    window.onunload = function(){};
+ history.forward();
+ </script>
+-->
+
+
+<form method="POST" action="/4Joptcar/index.php">
+<input type="hidden" name="user_id" value="p220083">
+99 グループ表示　99<p>
+９９ member max[3]</p><p>
+</p><center>
+<big><big>　　　　　　　　　　　　　　　　　情報工学実験I　スケジュール管理システム　【99 画面表示】</big></big>
+　　　　p220083 　　　　　　　19 平　知季　　　　　　<p>
+<table bgcolor="black">
+<tbody><tr bgcolor="orange"><th><big>B02</big>
+<br><small><small>グループ</small></small></th>
+<th><font style="background-color:black" color="white"> #1 </font><small>　07/03 (木) [3.4]　</small></th>
+<th><font style="background-color:black" color="white"> #2 </font><small>　07/10 (木) [3.4]　</small></th>
+<th><font style="background-color:black" color="white"> #3 </font><small>　07/17 (木) [3.4]　</small></th>
+<th><font style="background-color:black" color="white"> #4 </font><small>　09/04 (木) [3.4]　</small></th>
+<th><font style="background-color:black" color="white"> #5 </font><small>　09/11 (木) [3.4]　</small></th>
+<th><font style="background-color:black" color="white"> #6 </font><small>　09/25 (木) [3.4]　</small></th>
+<th><font style="background-color:black" color="white"> #7 </font><small>　10/02 (木) [3.4]　</small></th>
+<th><font style="background-color:black" color="white"> #8 </font><small>　10/09 (木) [3.4]　</small></th>
+<th><font style="background-color:black" color="white"> #9 </font><small>　10/23 (木) [3.4]　</small></th>
+<th><font style="background-color:black" color="white"> #10 </font><small>　10/30 (木) [3.4]　</small></th>
+</tr>
+<tr bgcolor="white"><td>ケムソムラッチ</td>
+<td><font color="blue">企画会議 o</font><br>
+<input type="hidden" name="times" value="1">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="1">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="blue">部品確認作業 o</font><br>
+<input type="hidden" name="times" value="2">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="2">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="blue">ギヤボックス組立 o</font><br>
+<input type="hidden" name="times" value="3">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="3">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="blue">ギヤボックス組立 o</font><br>
+<font color="red">車体設計 x</font><br>
+<input type="hidden" name="times" value="4">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="4">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="blue">車体設計 o</font><br>
+<font color="red">アクリル板加工設計 x</font><br>
+<input type="hidden" name="times" value="5">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="5">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="blue">アクリル板加工設計 o</font><br>
+<input type="hidden" name="times" value="6">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="6">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="red">アクリル板加工完了 x</font><br>
+<input type="hidden" name="times" value="7">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="7">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="red">アクリル板加工完了 x</font><br>
+<input type="hidden" name="times" value="8">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="8">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="blue">アクリル板加工完了 o</font><br>
+<font color="red">車体組立 x</font><br>
+<font color="red">走行試験調整 x</font><br>
+<input type="hidden" name="times" value="9">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="9">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="blue">車体組立 o</font><br>
+<font color="blue">走行試験調整 o</font><br>
+<font color="blue">成績評価依頼 o</font><br>
+<input type="hidden" name="times" value="10">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="10">
+<input type="hidden" name="mode" value="10">
+</td>
+</tr><tr bgcolor="white"><td>平　知季</td>
+<td><font color="blue">プロジェクトマネージャ o</font><br>
+<font color="blue">企画会議 o</font><br>
+<input type="hidden" name="times" value="1">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="1">
+<input type="hidden" name="mode" value="10">
+　<p>　　<input type="submit" name="sub_1" value="編集">
+</p></td>
+<td><font color="blue">プロジェクトマネージャ o</font><br>
+<font color="red">作業計画 x</font><br>
+<input type="hidden" name="times" value="2">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="2">
+<input type="hidden" name="mode" value="10">
+　<p>　　<input type="submit" name="sub_2" value="編集">
+</p></td>
+<td><font color="blue">プロジェクトマネージャ o</font><br>
+<font color="blue">作業計画 o</font><br>
+<font color="blue">テストプログラム作成 o</font><br>
+<input type="hidden" name="times" value="3">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="3">
+<input type="hidden" name="mode" value="10">
+　<p>　　<input type="submit" name="sub_3" value="編集">
+</p></td>
+<td><font color="blue">プロジェクトマネージャ o</font><br>
+<font color="blue">プログラム作成 o</font><br>
+<input type="hidden" name="times" value="4">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="4">
+<input type="hidden" name="mode" value="10">
+　<p>　　<input type="submit" name="sub_4" value="編集">
+</p></td>
+<td><font color="blue">プロジェクトマネージャ o</font><br>
+<font color="red">プログラム作成 x</font><br>
+<font color="red">プログラム調整 x</font><br>
+<input type="hidden" name="times" value="5">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="5">
+<input type="hidden" name="mode" value="10">
+　<p>　　<input type="submit" name="sub_5" value="編集">
+</p></td>
+<td><font color="blue">プロジェクトマネージャ o</font><br>
+<font color="blue">プログラム作成 o</font><br>
+<font color="blue">プログラム調整 o</font><br>
+<input type="hidden" name="times" value="6">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="6">
+<input type="hidden" name="mode" value="10">
+　<p>　　<input type="submit" name="sub_6" value="編集">
+</p></td>
+<td><font color="blue">プロジェクトマネージャ o</font><br>
+<font color="blue">プログラム調整 o</font><br>
+<font color="red">走行試験調整 x</font><br>
+<input type="hidden" name="times" value="7">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="7">
+<input type="hidden" name="mode" value="10">
+　<p>　　<input type="submit" name="sub_7" value="編集">
+</p></td>
+<td><font color="blue">プロジェクトマネージャ o</font><br>
+<font color="blue">プログラム調整 o</font><br>
+<font color="red">走行試験調整 x</font><br>
+<font color="blue">3Dマスコット設計 o</font><br>
+<input type="hidden" name="times" value="8">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="8">
+<input type="hidden" name="mode" value="10">
+　<p>　　<input type="submit" name="sub_8" value="編集">
+</p></td>
+<td><font color="red">走行試験調整 x</font><br>
+<font color="blue">プログラム調整 o</font><br>
+<font color="blue">3Dマスコット作成 o</font><br>
+<input type="hidden" name="times" value="9">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="9">
+<input type="hidden" name="mode" value="10">
+　<p>　　<input type="submit" name="sub_9" value="編集">
+</p></td>
+<td><font color="red">成績評価依頼 x</font><br>
+<font color="blue">プロジェクトマネージャ o</font><br>
+<font color="red">走行試験調整 x</font><br>
+<font color="red">プログラム調整 x</font><br>
+<font color="red">電子基板半田付 x</font><br>
+<input type="hidden" name="times" value="10">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="10">
+<input type="hidden" name="mode" value="10">
+　<p>　　<input type="submit" name="sub_10" value="編集">
+</p></td>
+</tr><tr bgcolor="white"><td>釼谷諒太</td>
+<td><font color="blue">企画会議 o</font><br>
+<input type="hidden" name="times" value="1">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="1">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="blue">部品確認作業 o</font><br>
+<font color="red">作業計画 x</font><br>
+<input type="hidden" name="times" value="2">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="2">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="red">3Dマスコット設計 x</font><br>
+<font color="blue">作業計画 o</font><br>
+<font color="blue">電子基板半田付 o</font><br>
+<input type="hidden" name="times" value="3">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="3">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="blue">電子基板半田付 o</font><br>
+<input type="hidden" name="times" value="4">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="4">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="blue">電子基板半田付 o</font><br>
+<font color="red">3Dマスコット設計 x</font><br>
+<input type="hidden" name="times" value="5">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="5">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="black">3Dマスコット作成 </font><br>
+<input type="hidden" name="times" value="6">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="6">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="black">3Dマスコット作成 </font><br>
+<font color="black">走行試験調整 </font><br>
+<input type="hidden" name="times" value="7">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="7">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="black">走行試験調整 </font><br>
+<input type="hidden" name="times" value="8">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="8">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><input type="hidden" name="times" value="9">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="9">
+<input type="hidden" name="mode" value="10">
+</td>
+<td><font color="red">車体組立 x</font><br>
+<font color="red">成績評価依頼 x</font><br>
+<input type="hidden" name="times" value="10">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="mode" value="10">
+<input type="hidden" name="mode" value="10">
+</td>
+</tr>
+</tbody></table>
+</p><p>
+<table><tbody><tr><th>
+<input type="submit" name="sub1" value="終了">
+</th><th>
+<input type="hidden" name="times" value="">
+<input type="hidden" name="userid" value="p220083">
+<input type="hidden" name="user_id" value="p220083">
+<input type="hidden" name="times" value="11">
+<input type="hidden" name="mode" value="90">
+<input type="submit" name="sub1" value="再表示">
+</th></tr></tbody></table>
+</p><p>
+<input type="hidden" name="userid" value="p220083">
+</p></center>
+<!--<TABLE BORDER="1" BGCOLOR="black" > 
+<TR BGCOLOR="white"><TD>
+<H1>お知らせ</H1>
+<DL><DT><B>授業追加について</B><DD>補講期間 1/20(木) 5-6時限目 に「情報工学実験I 」を実施することになりました。<P>
+</DL>
+<P>
+<DL><DT><B>ネジを取り付けるアクリル板の穴大きさの変更</B>
+<DD>テキストでは「４mm」の大きさになっていますが、「２.６mm」に変更してください
+<DD>したがって、「ナットドラバー」は必要なくなりますので使用しないことにします。
+<DD> <P>
+<DT><B>アクリル板の接着剤の変更</B>
+<DD>テキストでは「アクリル樹脂用接着剤 アクリルサンデー」を使用することになっていますが、<BR>
+<DD>気化して蒸発しまうのが早いこと使い勝手が悪いので「タミヤセメント」に変更することにしました。<BR>
+<DD><IMG SRC="tamiyacement.jpg" height="200">
+</DL>
+</TD></TR></TABLE>
+-->
+<hr size="5" color="deepskyblue">
+<address></address>
+
+
+  
+    
+    
+
+</form></body></html>
